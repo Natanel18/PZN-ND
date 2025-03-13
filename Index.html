@@ -20,7 +20,7 @@ Arzneimittelartikelnummer (PZN) <input type="text" value="0660816" id="PZNInput"
 		}
 		
 		
-		var pruefzifferBerechnet = 11 - (pruefsumme % 11);
+		var pruefzifferBerechnet = (11 - (pruefsumme % 11)) % 11;
 		
 		
 		if (pruefzifferBerechnet == 11) {
@@ -42,4 +42,6 @@ Arzneimittelartikelnummer (PZN) <input type="text" value="0660816" id="PZNInput"
 
 
 </script>
+
+
 
